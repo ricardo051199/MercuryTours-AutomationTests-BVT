@@ -7,6 +7,7 @@ Background:
     Given I am on the mercury tours homepages
     And I click the "Register" link
 
+@maximize
 Scenario: Register a valid user on the mercury tours page.  
     Given I enter the required fields as follows
     |First Name:        | Pepito             |
@@ -25,6 +26,7 @@ Scenario: Register a valid user on the mercury tours page.
     Then the confirmation screen is show
     And my user name is "Pepazo"
 
+@maximize
 Scenario: Register an existing user on the mercury tours page.  
     Given I enter the required fields as follows
     |First Name:        | Pepito             |

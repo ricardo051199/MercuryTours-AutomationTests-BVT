@@ -7,6 +7,7 @@ Background:
   Given I am on the Mercury Tours homepage
   And I will click the "Flights" link 
 
+@maximize
 Scenario: Search for a flight with available seats, with the origin and destination different from each other on the Mercury Tours page.    
   Given I enter the required fields as show below
     |Type:                   | Round Trip         |
@@ -20,6 +21,7 @@ Scenario: Search for a flight with available seats, with the origin and destinat
   When send my flight search form
   Then I see text above after flight search engine "After flight finder - Seats Avaialble"
 
+@maximize
 Scenario: Search a flight with no seats avaialble on the Mercury Tours page.     
   Given I enter the required fields as show below
     |Type:                   | One Way            |

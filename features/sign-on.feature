@@ -6,6 +6,7 @@ Feature: Verify login Mercury Tours
 Background:
     Given I m on the mercury tours homepages
 
+@maximize
 Scenario: Login with a registered user name and password on the Mercury Tours page      
     Given I click on the "SIGN-ON" link
     And I enter "pepe@pepazo.com" in the "e-mail" field
@@ -13,6 +14,7 @@ Scenario: Login with a registered user name and password on the Mercury Tours pa
     When I Press the "Submit" button
     Then I should see the message "Login Successfully"
 
+@maximize
 Scenario: unlogin from the website         
     Given I am logged in
     And I click on the "Flights" link

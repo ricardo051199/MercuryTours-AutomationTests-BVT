@@ -1,7 +1,9 @@
+require_relative '../../page object model/pages/homePage'
+
 #Given I am on the Mercury Tours page
 Given(/^I am on the Mercury Tours homepage$/) do
-  page.driver.browser.manage.window.maximize
-  visit('http://demo.guru99.com/test/newtours/')
+  @home_page = HomePage.new
+  @home_page.visit_home_page  
 end
 
 #Given I will click the "Flights" link
@@ -67,7 +69,6 @@ end
 #Then I see text above after flight search engine "After flight finder - No Seats Avaialble  "
 Then('I see text above after flight search engine {string}') do |flightFinder|
   flightFinderLabel = all('font')[4]
-  puts "ONLY FOR TEST PURPOSES:"+flightFinderLabel.text
   if flightFinderLabel.text != flightFinder
       raise "Flight search should be"+flightFinder 
   end
