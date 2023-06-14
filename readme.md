@@ -16,15 +16,17 @@
     cucumber features\flights.feature
     cucumber features\register.feature
     cucumber features\sign-on.feature
+  
+</details>
 
 <details>
     <summary><strong>Tecnologías usadas</strong></summary>
 
-
-[![Ruby Version](https://img.shields.io/badge/Ruby-v3.0.2.-blue](https://www.ruby-lang.org/en/)
+[![Ruby Version](https://img.shields.io/badge/Ruby-v3.0.2.-blue)](https://www.ruby-lang.org/en/)
 
 Un lenguaje de programación dinámico y de código abierto con un enfoque en Sencillez y productividad. Tiene una sintaxis elegante que es Natural de leer y fácil de escribir.
 
+</details>
 
 ## TechStack
 
